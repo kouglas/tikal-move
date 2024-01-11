@@ -70,7 +70,15 @@ export default function TestButton(){
           </Map>
         </Container>
       </Section>
+      {/* <Section className=' mt-0 flex items-center justify-center'>
+      <Link 
+                type="submit" 
+                href='/dashboard-view'
+                className="flex w-9/12 justify-center rounded-full bg-tikal-cyan px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase mt-6 ">Sign up</Link>
+      </Section> */}
+      
     </Layout>
+    
     </main>
   )
             }

@@ -114,47 +114,7 @@ export default function Dashboard(){
         </section>
       
 
-      {/* <div>
-          
-        <button className="flex w-1/2 mx-auto  justify-center rounded-full px-3 py-1.5 text-sm leading-6 border-tikal-cyan border-2 text-tikal-cyan shadow-sm hover:bg-indigo-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase mt-10">Get Sample</button>
-
-
-        </div> */}
-
-      {/* <section className="border border-tikal-blues-500 mt-2 ml-20">
-      <AnabaenaLineGraph />
-      <WaterLineGraph />
-      <ChlorellaLineGraph />
       
-      </section> */}
-
-      {/* {clickCount >= 1 && (
-        <section className="border border-tikal-blues-500 mt-2 ml-20">
-          <WaterLineGraph />
-        </section>
-      )}
-
-      {clickCount >= 2 && (
-        <section className="border border-tikal-blues-500 mt-2 ml-20">
-          <ChlorellaLineGraph />
-        </section>
-      )}
-
-      {clickCount >= 3 && (
-        <section className="border border-tikal-blues-500 mt-2 ml-20">
-          <AnabaenaLineGraph />
-        </section>
-      )} */}
-
-
-      {/* unsure about the following: */}
-      {/* right now i'm leaning towards making these two items
-      icons in the sidebar and the adding a notification to them or just 
-      editing the tooltip
-       */}
-      {/* Irrigation automation notifications (aka text notifications to tell them to water the crops) */}
-      {/* Nutrient dispersion update/notification */}
-    
     </main>
   )
 }

@@ -54,7 +54,7 @@ export default function DeviceSetup() {
             size={200}
           /> */}
           <Link
-            href='set-location'          
+            href='dashboard-view'          
           >
             <div className='flex items-center justify-center border border-tikal-cyan mx-auto'>
               <GiDefenseSatellite
@@ -74,7 +74,7 @@ export default function DeviceSetup() {
           <br />
           {/* <FaUnity /> */}
           <Link
-            href={''}
+            href='dashboard-view'
           >
             <div className='flex items-center justify-center border border-lime-700'>
               <FcOrgUnit
@@ -87,12 +87,12 @@ export default function DeviceSetup() {
       </div>
     </div>
     </section>
-    <div className=' flex justify-center items-center '>
+    {/* <div className=' flex justify-center items-center '>
               <Link 
                 type="submit" 
-                href='/set-location'
+                href='test-button'
                 className="flex w-9/12 justify-center rounded-full bg-tikal-cyan px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 uppercase mt-6 ">Sign up</Link>
-            </div>
+            </div> */}
   </main>
   )
 
