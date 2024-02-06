@@ -11,37 +11,19 @@ import SidebarNav from "@/components/SidebarNav"
 // import LineGraph from "@/graphs/LineGraph"
 import WaterLineGraph from "@/graphs/WaterGraph"
 import ChlorellaLineGraph from "@/graphs/ChlorellaGraph"
-import AnabaenaLineGraph from "@/graphs/AnabaenaGraph"
+import CustomLineGraph from "@/graphs/CustomLineGraph"
 import TestButton from "../test-button/page"
 import React, { useState, useEffect } from "react"
 
 
 export default function Dashboard(){
 
-  // the cards below need to stack in mobile and they currently don't
-  //consider making the background data
-  
-
-  // UPDATE, MAKE THE DASHBOARD MORE LIKE THIS: 
-  // https://tikalfilters.slack.com/files/U030RSXFUSE/F05NDR9R4KZ/image.png
 
   const [clickCount, setClickCount] = useState(0);
   const handleGetSampleClick = () => {
-    setClickCount((prevCount) => (prevCount % 3) + 1);
+    setClickCount((prevCount) => prevCount + 1);
   };
 
-  const renderGraph = () => {
-    switch (clickCount) {
-      case 1:
-        return <WaterLineGraph />;
-      case 2:
-        return <ChlorellaLineGraph />;
-      case 3:
-        return <AnabaenaLineGraph />;
-      default:
-        return null;
-    }
-  };
 
   return (
     <main className="">
@@ -110,7 +92,7 @@ export default function Dashboard(){
         </div>
 
         <section className="mt-2 ml-20">
-        {renderGraph()}
+        <CustomLineGraph csvFileName={`data${clickCount}.csv`} title={`Data ${clickCount}`} />
         </section>
       
 
